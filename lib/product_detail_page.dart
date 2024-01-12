@@ -9,6 +9,7 @@ class ProductDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 24),
         child: SingleChildScrollView(
@@ -17,16 +18,22 @@ class ProductDetailPage extends StatelessWidget {
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     const Icon(
                       Icons.chevron_left_outlined,
                       size: 40,
+                      color: Colors.black,
                     ),
                     Expanded(
                       child: SizedBox(
                         height: 80,
                         width: 80,
-                        child: Image.asset("assets/images/logo.png"),
+                        child: Image.asset(
+                          "assets/images/logo.png",
+                          width: 58,
+                          height: 58,
+                        ),
                       ),
                     ),
                     SvgPicture.asset(
@@ -37,9 +44,11 @@ class ProductDetailPage extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(
-                  height: 40,
+                  height: 31,
                 ),
-                Image.asset("assets/images/menu1.png"),
+                Image.asset(
+                  "assets/images/menu1.png",
+                ),
                 const SizedBox(
                   height: 16,
                 ),

@@ -24,20 +24,24 @@ class TransactionPage extends StatelessWidget {
                       },
                       icon: const Icon(
                         Icons.chevron_left_outlined,
-                        size: 40,
+                        size: 34,
                       ),
                     ),
-                    Expanded(
-                      child: SizedBox(
-                        height: 80,
-                        width: 80,
-                        child: Image.asset("assets/images/logo.png"),
+                    SizedBox(
+                      width: 80,
+                      height: 80,
+                      child: Center(
+                        child: Image.asset(
+                          "assets/images/logo.png",
+                          width: 58,
+                          height: 58,
+                        ),
                       ),
                     ),
                     SvgPicture.asset(
                       "assets/svg/icon_share.svg",
-                      height: 40,
-                      width: 40,
+                      height: 38,
+                      width: 24,
                     ),
                   ],
                 ),
